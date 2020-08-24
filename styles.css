@@ -16,6 +16,34 @@ html {
   box-sizing: border-box;
 }
 
+#unused {
+  overflow-y: scroll;
+  max-width: 52em;
+}
+
+body {
+  margin: auto;
+}
+
+article {
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    max-width: none;
+    max-width: 90vw;
+    min-width: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 1vw;
+    max-width: 52em;
+    min-width: 50vw;
+  }
+}
+
 h1 {
   font-size: 2.4em;
   font-weight: 300;
@@ -32,7 +60,7 @@ h1 {
 
 h2 {
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -167,4 +195,56 @@ thead {
   display: table-header-group;
   vertical-align: middle;
   border-color: inherit;
+}
+
+footer {
+  text-align: left;
+  font-size: 0.6em;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav > div > ul > li > a {
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 0em;
+}
+nav > div.nav-right > ul > li > a {
+  padding: 0.5em 0.0em;
+  padding-left: 1em;
+}
+nav > div > ul > li > a:hover {
+  color: #cccccc !important;
+}
+.nav-left {
+  float: left;
+}
+.nav-right ul li {
+  float: right;
+}
+
+.portrait {
+  border-radius:50%;
+  max-width: 15vw;
+}
+
+.logo {
+  height: 0.9em;
+  border-radius: 50%;
+  margin-left: 0.5em;
+}
+
+.logo:hover {
+  transform: scale(1.6);
+  margin-right: 0.6em;
 }

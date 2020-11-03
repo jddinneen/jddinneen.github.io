@@ -190,6 +190,11 @@ table {
   color: #abb2bf;
 }
 
+td, th {
+    border: 1px solid;
+    padding: 1rem;
+}
+
 thead {
   color: #ffffff;
   display: table-header-group;

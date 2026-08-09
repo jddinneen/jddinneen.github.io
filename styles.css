@@ -165,7 +165,7 @@ li {
 p {
   margin-top: 0;
   margin-bottom: 1.5em;
-  line-height: 1.6;
+  line-height: 1.5;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -241,6 +241,8 @@ nav > div > ul > li > a:hover {
 .portrait {
   border-radius:50%;
   max-width: 15vw;
+  float: left;
+  margin-right: 3%;
 }
 
 .logo {
@@ -252,4 +254,13 @@ nav > div > ul > li > a:hover {
 .logo:hover {
   transform: scale(1.6);
   margin-right: 0.6em;
+}
+
+.line {
+  display: flex;
+  flex-grow: 1;
+  height: 1px;
+  align-self: center;
+  margin: 0 20px;
+  background-color: grey;
 }
